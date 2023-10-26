@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "rm -rf dist && mkdir dist && docker build -t c8y-microservice . && docker save c8y-microservice > dist/image.tar",
+    "dist": "cp cumulocity.json dist/cumulocity.json && cd dist && zip c8y-microservice image.tar cumulocity.json"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@c8y/client": "^1017.0.365",
+    "@types/mqtt": "^2.5.0",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mqtt": "^5.1.3"
   }
 }

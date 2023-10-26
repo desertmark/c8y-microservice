@@ -7,7 +7,8 @@
     "isolation": "MULTI_TENANT",
     "requiredRoles": [
         "ROLE_ALARM_READ",
-        "ROLE_ALARM_ADMIN"
+        "ROLE_ALARM_ADMIN",
+        "ROLE_NOTIFICATION_2_ADMIN"
     ],
     "roles": []
 }
