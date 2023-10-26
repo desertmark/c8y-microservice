@@ -1,0 +1,16 @@
+{
+  "name": "c8y-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@c8y/client": "^1017.0.365",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
